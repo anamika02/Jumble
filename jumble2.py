@@ -2,10 +2,10 @@ import argparse
 from itertools import permutations
 import json
 
-parser = argparse.ArgumentParser(description='Solver for Jumble')
-parser.add_argument('jumbledwords', nargs='+',
-                    help='One or more jumbled words')
-argv = parser.parse_args()
+#parser = argparse.ArgumentParser(description='Solver for Jumble')
+#parser.add_argument('jumbledwords', nargs='+',
+#                    help='One or more jumbled words')
+#argv = parser.parse_args()
 
 input_file = open('/Users/anamikas/Project/sparkdemo/SparkExcercise/puzzle2.json')
 input_data = json.load(input_file)
@@ -65,8 +65,6 @@ def insert_space(mystring, position):
     mystring   =  mystring[:position] + ' ' + mystring[position:] 
     return mystring   
 
-def get_chosen_word():
-
 
 k=0
 for j in data2:
@@ -74,10 +72,5 @@ for j in data2:
     k=k+1
     
 print('final_sentence=',final_sentence)
-    
-    
-    
-        
-    
-#    print(jumbledword, legal_words)
+
     
